@@ -47,7 +47,7 @@ public class CommentService {
     public void updateComment(@PathVariable("articleId")Long articleId,@PathVariable("commentid")Long commentid,@RequestBody Comment comment){
         comment.setArticleId(articleId);
         comment.setId(commentid);
-        comment.setLastedit(new Date());
+
         this.commentFacade.updateComment(comment);
     }
 
