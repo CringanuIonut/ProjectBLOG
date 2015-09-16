@@ -11,7 +11,7 @@
     <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
     <bean class="org.apache.commons.dbcp.BasicDataSource"
           p:username="root"
-          p:url="jdbc:mysql://localhost/blog"
+          p:url="jdbc:mysql://localhost/blog?zeroDateTimeBehavior=convertToNull"
           p:driverClassName="com.mysql.jdbc.Driver" id="testDataSource"/>
 
     <bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="entityManagerFactory">

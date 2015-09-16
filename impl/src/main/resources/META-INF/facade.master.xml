@@ -4,6 +4,7 @@
         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
     <import resource="classpath*:META-INF/Article.facade.xml"/>
+    <import resource="classpath*:META-INF/Comment.facade.xml"/>
 
 
 
